@@ -3,28 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  {% if page.title %}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {% endif %}
 
-  {{ content }}
+  <h2>
+    Hello, 
+  </h2>
 
-  {% if site.posts.size > 0 %}
-  <h2 class="post-list-heading">{{ page.list_title | default: "..." }}</h2>
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          {% assign date_format = site.minima.date_format | default: "%-d %B %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h3>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {% endif %}
+  <p>
+    🙋🏻‍♀I am Fionna Yao, a highly creative and passionate UI/UX designer with front-end coding chops. I am based in Melbourne, Australia.
+  </p>
+  
+  <p>
+    🌞By day I champion user-centered approach and design thinking to enterprise level product development at Apparel21. 🌚In my spare time; I like to write about design  , join hackathons and experiment on the web.
+  </p>  
+  
+  <p>
+    💬Get in touch with me by email or on any of the social media network below. I speak English, Indonesian, Chinese and conversational Japanese.
+  </p>
 
 </div>
