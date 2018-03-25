@@ -42,6 +42,10 @@ defaults:
       path: "assets/allori"
     values:
       allori: true
+  - scope:
+      path: "assets/caterpillar"
+    values:
+      caterpillar: true
 
 # Build settings
 markdown: kramdown
