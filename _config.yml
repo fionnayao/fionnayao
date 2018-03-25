@@ -27,9 +27,21 @@ collections:
 
 defaults:
   - scope:
-      path: "assets/"
+      path: "assets"
     values:
       image: true
+  - scope:
+      path: "assets/envimo"
+    values:
+      envimo: true
+  - scope:
+      path: "assets/govhack"
+    values:
+      govhack: true
+  - scope:
+      path: "assets/allori"
+    values:
+      allori: true
 
 # Build settings
 markdown: kramdown
