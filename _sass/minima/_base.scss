@@ -13,6 +13,11 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
+html {
+  font-size: 62.5%
+}
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
@@ -23,7 +28,6 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -245,4 +249,17 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+
+/**
+ * Box container with rounded corner
+ */
+%box-container {
+  background: #fff;
+  border: 1px solid #e4e6f2;
+  box-shadow: 0 2px 5px 0 rgba(50,52,57,.11);
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: $spacing-unit / 2;
 }

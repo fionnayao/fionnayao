@@ -2,8 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  margin-top: $spacing-unit / 3;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -43,6 +42,24 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    u {
+      text-decoration: none;
+      background-image: linear-gradient(to bottom, $background-color 85%, transparent 85%), 
+      linear-gradient(to right, $brand-color 30%, gold 60%);
+      background-size: 300% 100%;
+      background-position: 100% 0;
+      background-repeat: no-repeat;
+      transition: 0.8s background-position;
+    }
+
+    &:hover u {
+      background-position: 0%
     }
   }
 
@@ -190,10 +207,33 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+}
 
-  > li {
-    margin-bottom: $spacing-unit;
+.post-link-container {
+  @extend %box-container;
+  margin-bottom: $spacing-unit;
+  display: block;
+  position: relative;
+  padding-left: 140px;
+  overflow: hidden;
+
+  &:link, &:hover, &:visited {
+    color: $text-color;
   }
+
+  &:hover {
+    text-decoration: none;
+    background-color: darken($background-color, 1%);
+  }
+}
+
+.post-thumbnail-image {
+  background: linear-gradient(to top left, $grey-color-light, $grey-color-light);
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .post-meta {
