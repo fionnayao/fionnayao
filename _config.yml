@@ -10,7 +10,7 @@ title: Fionna Yao
 email: design@fionnayao.com
 description: >- # this means to ignore newlines until "baseurl:"
   UI/UX designer
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fionnayao
 github_username:  fionnayao
@@ -24,6 +24,12 @@ header_pages:
 collections:
   projects:
     output: true
+
+defaults:
+  - scope:
+      path: "assets/"
+    values:
+      image: true
 
 # Build settings
 markdown: kramdown
