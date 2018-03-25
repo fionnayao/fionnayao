@@ -1,6 +1,7 @@
 ---
 layout: post
 project: govhack
+description: LOST FOUND, winner of the Victorian data stream challenge at GOVHACK 2015
 ---
 Back to projects
 
