@@ -326,3 +326,16 @@ h3, .h3 {
     @include relative-font-size(1.125);
   }
 }
+
+/**
+ * Project
+ */
+
+.company-project-image {
+    width: 185px
+}
+
+  .company-project-description {
+      padding-left: 70px
+  }
+}
