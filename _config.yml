@@ -16,8 +16,7 @@ twitter_username: fionnayao
 github_username:  fionnayao
 
 header_pages:
-  - posts.md
-  - about.md
+  - thoughts.md
   - projects.md
   - contact.md
 

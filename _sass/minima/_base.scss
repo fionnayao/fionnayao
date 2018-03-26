@@ -256,10 +256,9 @@ table {
  * Box container with rounded corner
  */
 %box-container {
-  background: #fff;
-  border: 1px solid #e4e6f2;
+  background: rgba(255,255,255,0.25);
+  border: 1px solid lighten($grey-color-light, 5%);
   box-shadow: 0 2px 5px 0 rgba(50,52,57,.11);
   border-radius: 8px;
-  margin: 10px auto;
   padding: $spacing-unit / 2;
 }
