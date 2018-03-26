@@ -283,8 +283,6 @@
   @include relative-font-size(1.5);
 }
 
-
-
 /**
  * Posts
  */
@@ -306,6 +304,42 @@
   margin-bottom: $spacing-unit;
 }
 
+/**
+ * Home sweet home
+ */
+
+ .home {
+  font-size: 1.8rem;
+  position: relative;
+    @include media-query($on-palm) {
+      padding-top: 150px;
+    }
+  .text {
+    width: 350px; 
+    margin: $spacing-unit 0 0;
+    @include media-query($on-palm) {
+      width: 100%;
+    }
+  }
+
+  .parallax {
+    position: absolute;
+  }
+
+  .img-cloud { width: 145px; top: 320px; right: 140px; }
+  .img-fly { width: 130px; top: 260px; right: 170px; }
+  .img-power { width: 180px; top: 150px; right: 70px; z-index: -1 }
+
+  @include media-query($on-palm) {
+    .img-cloud { top: 20%;  right: 40%; width: 100px }
+    .img-fly { top: 10%; right: 40%; width: 120px }
+    .img-power { top: -5%;  right: 5% }  
+  }
+}
+
+/**
+ * Headings
+ */
 
 h1, .h1 {
   @include relative-font-size(2);
@@ -329,21 +363,4 @@ h3, .h3 {
   @include media-query($on-laptop) {
     @include relative-font-size(1.125);
   }
-}
-
-// /**
-//  * Project
-//  */
-
-// .company-project-image {
-//     width: 185px
-// }
-
-// .company-project-description {
-//     padding-left: 70px
-// }
-
-.home {
-  font-size: 1.8rem;
-  position: relative;
 }
