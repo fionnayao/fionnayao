@@ -18,7 +18,7 @@ github_username:  fionnayao
 header_pages:
   - thoughts.md
   - projects.md
-  - contact.md
+  # - contact.md
 
 collections:
   projects:
@@ -30,9 +30,9 @@ defaults:
     values:
       image: true
   - scope:
-      path: "assets/envimo"
+      path: "assets/apparel21"
     values:
-      envimo: true
+      apparel21: true
   - scope:
       path: "assets/govhack"
     values:

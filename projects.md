@@ -6,15 +6,16 @@ permalink: /projects/
 
 {% if site.projects.size > 0 %}
 
-
-  {% for post in site.projects %}
+  {% assign sorted_projects = site.projects | sort:'order' %}
+  {% for post in sorted_projects  %}
 
   <section data-project="{{ post.title | downcase }}">
 
+    <div class="portfolio-background" style="background-image:url(/assets/company/{{post.project_logo}})"></div>
+
     <a class="projects-link-container" href="{{ post.url | relative_url }}">
-      <img class="projects-thumbnail-image" src="/assets/company/{{post.company_logo}}" alt="{{ post.company_logo }}" />
-      <span> {{ post.description }}</span>
-      <span class="projects-button-link" role="button"> View {{ post.title }}'s projects ↝ </span>
+      <p><img src="/assets/company/{{post.company_logo}}" alt="{{ post.company_logo }}" /> {{ post.description }}</p>
+      <span class="projects-button-link" role="button"> See my work for {{ post.title }} ↝ </span>
     </a>
 
   </section>

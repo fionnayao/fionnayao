@@ -1,9 +1,13 @@
 ---
-layout: post
+layout: project
 project: govhack
-description: LOST FOUND, winner of the Victorian data stream challenge at GOVHACK 2015
-company_logo:
-project_logo:
+order: 3
+description: |
+  🏆 winning the Victorian data stream challenge at GOVHACK 2015
+long_description: |
+  "LOST FOUND" is a commuter web app for connecting commuter who has lost an item, the finder as well as government services provider. Envisioned as a platform-agnostic digital lost property service. Try the demo at http://pineapply.github.io
+company_logo: govhack.svg
+project_logo: govhack.jpg
 ---
 Back to projects
 
