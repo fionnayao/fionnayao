@@ -1,0 +1,48 @@
+/**
+ * Portfolio sections
+ */
+
+ .portfolio {
+    transition: background-color 1s ease;
+
+    section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.project- {
+    &allori{ background-color:#eb412a }
+    &envimo{ background-color:#8e7e59 /* #c6b692 */ }
+    &caterpillar{ background-color:#ffc720 }
+    &govhack{ background-color:#4c9ad2 }
+}
+
+.projects-link-container {
+    width: 80vw;
+    font-size: 2.4rem;
+    text-align: center;
+    text-shadow: 
+    0 1px 0 rgba(0, 0, 0, 0.1), 
+    0 2px 0 rgba(0, 0, 0, 0.1), 
+    0 3px 2px rgba(0, 0, 0, 0.1);
+
+    &:link, &:hover, &:visited {
+        color: #FFF;
+        text-decoration: none;
+      }
+}
+
+.projects-thumbnail-image {
+    display: inline-block;
+}
+
+.projects-button-link {
+    margin-top: $spacing-unit;
+    padding: $spacing-unit/2;
+    display: inline-block;
+    font-size: 1.6rem;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}

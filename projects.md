@@ -1,24 +1,24 @@
 ---
-layout: page
+layout: projects
 title: Projects
 permalink: /projects/
 ---
 
-<div>
-  {% if site.projects.size > 0 %}
+{% if site.projects.size > 0 %}
 
-  <ul class="post-list">
-    {% for post in site.projects %}
 
-    <a class="post-link-container" href="{{ post.url | relative_url }}">
-      <div class="post-thumbnail-image company-project-image">
-        <img src="/assets/company/{{post.company_logo}}" alt="{{ post.company_logo }}" />
-      </div>
-      <p class="company-project-description">{{ post.description }}</p>
+  {% for post in site.projects %}
+
+  <section data-project="{{ post.title | downcase }}">
+
+    <a class="projects-link-container" href="{{ post.url | relative_url }}">
+      <img class="projects-thumbnail-image" src="/assets/company/{{post.company_logo}}" alt="{{ post.company_logo }}" />
+      <span> {{ post.description }}</span>
+      <span class="projects-button-link" role="button"> View {{ post.title }}'s projects ↝ </span>
     </a>
 
-    {% endfor %}
-  </ul>
+  </section>
 
-  {% endif %}
-</div>
+  {% endfor %}
+
+{% endif %}

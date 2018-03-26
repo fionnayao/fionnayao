@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+  {% include google-analytics.html %}
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <body>
+
+    {% include header.html %}
+    <!-- <div class="wrapper">
+        
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title | escape }}</h1>
+        </header>
+    </div>           -->
+
+    <div class="portfolio">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}assets/scroll.js" ></script>
+  </body>
+
+</html>

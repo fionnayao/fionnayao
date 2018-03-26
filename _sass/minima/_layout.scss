@@ -259,6 +259,10 @@
     margin: $spacing-unit 0 $spacing-unit/2;
     width: 100%
   }
+
+  .post-meta {
+    width: 100%;
+  }
 }
 
 .post-thumbnail-image {
@@ -285,7 +289,7 @@
  * Posts
  */
 .post-header {
-  margin: $spacing-unit 0;
+  margin: $spacing-unit*2 0;
 }
 
 .post-title {
@@ -327,15 +331,14 @@ h3, .h3 {
   }
 }
 
-/**
- * Project
- */
+// /**
+//  * Project
+//  */
 
-.company-project-image {
-    width: 185px
-}
+// .company-project-image {
+//     width: 185px
+// }
 
-  .company-project-description {
-      padding-left: 70px
-  }
-}
+// .company-project-description {
+//     padding-left: 70px
+// }
