@@ -6,7 +6,9 @@ permalink: /thoughts/
 
 <div class="home">
 
-  {% if site.posts.size > 0 %}
+  ⚠️ Please bear with me while I'm moving my writings here
+
+  <!-- {% if site.posts.size > 0 %}
     <div class="post-list">
       {% for post in site.posts %}
         <a class="post-link-container" href="{{ post.url | relative_url }}">
@@ -21,7 +23,7 @@ permalink: /thoughts/
           {% endif %}
         </a>
       {% endfor %}
-    </div>
+    </div> -->
 
     <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
 

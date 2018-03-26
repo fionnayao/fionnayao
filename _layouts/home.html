@@ -4,20 +4,55 @@ layout: default
 
 <div class="home">
 
-  <h2>
-    Hello, 
-  </h2>
+  <img src="{{ site.baseurl }}assets/hello.svg" height="60" alt="Hello"/>
 
-  <p>
-    🙋🏻‍♀I am Fionna Yao, a highly creative and passionate UI/UX designer with front-end coding chops. I am based in Melbourne, Australia.
+  <div class="text" style="width: 350px; margin-top:30px"><p>
+  🙋🏻‍♀I am Fionna Yao, a highly creative and passionate UI/UX designer with front-end coding chops. I am based in Melbourne, Australia.
   </p>
   
   <p>
-    🌞By day I champion user-centered approach and design thinking to enterprise level product development at Apparel21. 🌚In my spare time; I like to write about design  , join hackathons and experiment on the web.
-  </p>  
+  🌞By day I champion user-centered approach and design thinking to enterprise level product development at Apparel21. 🌚In my spare time; I like to join hackathons and experiments on the web.
+  </p>
   
   <p>
-    💬Get in touch with me by email or on any of the social media network below. I speak English, Indonesian, Chinese and conversational Japanese.
-  </p>
+  💬Get in touch with me by <a href="javascript:location='mailto:\u0064\u0065\u0073\u0069\u0067\u006e\u0040\u0066\u0069\u006f\u006e\u006e\u0061\u0079\u0061\u006f\u002e\u0063\u006f\u006d';void 0">email</a> or on any of the social media network below. I speak English, Indonesian, Chinese and conversational Japanese.
+  </p></div>
 
+  
+  <img src="{{ site.baseurl }}assets/img-cloud.svg" alt="An feature image" data-parallaxify-range-x="10" data-parallaxify-range-y="30"
+  style="position: absolute; width: 145px; top: 320px; right: 140px;">
+  <img src="{{ site.baseurl }}assets/img-fly.svg" alt="An feature image" data-parallaxify-range-x="20" data-parallaxify-range-y="10"
+  style="position: absolute; width: 130px; top: 260px; right: 170px;">
+  <img src="{{ site.baseurl }}assets/img-power.svg" alt="An feature image" data-parallaxify-range-x="60" data-parallaxify-range-y="-30"
+  style="position: absolute; width: 180px; top: 150px; right: 70px; z-index: -1">
 </div>
+
+
+<script src="{{ site.baseurl }}assets/parallaxify.js" ></script>
+<!-- <script type="text/javascript">
+  function downloadJSAtOnload() {
+  var element = document.createElement("script");
+  element.src = "/assets/parallaxify.js";
+  document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+  window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+  window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
+</script> -->
+<script>
+  $(document).ready(function() {
+    $.parallaxify({
+      positionProperty: 'transform',
+      responsive: true,
+      motionType: 'natural',
+      mouseMotionType: 'gaussian',
+      motionAngleX: 80,
+      motionAngleY: 80,
+      alphaFilter: 0.5,
+      adjustBasePosition: true,
+      alphaPosition: 0.025
+    });
+  });
+</script>  
