@@ -8,7 +8,7 @@ layout: default
   <header class="post-header">
     <h2>{{ page.title | escape }}</h2>
     {% if page.long_description %}
-     <p>{{ page.long_description | escape }}</p>
+     <p>{{ page.long_description | html_escape }}</p>
     {% endif %}
   </header>
 
