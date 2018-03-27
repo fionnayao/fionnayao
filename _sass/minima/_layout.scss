@@ -50,12 +50,17 @@
 
     u {
       text-decoration: none;
-      background-image: linear-gradient(to bottom, $background-color 85%, transparent 85%), 
+      background-image: linear-gradient(to bottom, $background-color 85%, transparent 85%),
       linear-gradient(to right, $brand-color 30%, gold 60%);
       background-size: 300% 100%;
       background-position: 100% 0;
       background-repeat: no-repeat;
       transition: 0.8s background-position;
+
+      &.active {
+        background-image: linear-gradient(to bottom, $background-color 85%, transparent 85%),
+        linear-gradient(to right, $brand-color 30%, $brand-color 60%);
+      }
     }
 
     &:hover u {
@@ -249,7 +254,7 @@
   &:hover {
     text-decoration: none;
     background-color: #FFF;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1), 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1),
     0 10px 10px rgba(0,0,0,0.1);
     transform: translateY(-2px);
   }
@@ -315,7 +320,7 @@
       padding-top: 150px;
     }
   .text {
-    width: 350px; 
+    width: 350px;
     margin: $spacing-unit 0 0;
     @include media-query($on-palm) {
       width: 100%;
@@ -333,7 +338,7 @@
   @include media-query($on-palm) {
     .img-cloud { top: 20%;  right: 40%; width: 100px }
     .img-fly { top: 10%; right: 40%; width: 120px }
-    .img-power { top: -5%;  right: 10% }  
+    .img-power { top: -5%;  right: 10% }
   }
 }
 
